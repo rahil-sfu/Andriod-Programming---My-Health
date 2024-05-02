@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.StressFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Stress Checker"
+                    android:textSize="24sp"
+                    android:paddingTop="10dp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:id="@+id/stressSave"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text = "Save"
+                        android:onClick="onStressSaveClicked"/>
+
+                    <Button
+                        android:id="@+id/stressReset"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text = "Reset"
+                        android:onClick="onStressResetClicked"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How often have you been upset because of something that happened unexpectedly?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How often have you felt that you were unable to control the important things in your life?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How often have you felt nervous and stressed?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How often have you felt confident about your ability to handle your personal problems?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How often have you felt that things were going your way?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How often have you found that you could not cope with all the things that you had to do?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How often have you been able to control irritations in your life?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="how often have you felt that you were on top of things?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How often have you been angered because of things that happened that were outside of your control?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="How often have you felt difficulties were piling up so high that you could not overcome them?(0-10)"
+                    android:textSize="15dp"
+                    android:layout_marginTop="10dp"/>
+
+                <com.google.android.material.slider.Slider
+                    android:id="@+id/discreteSlider_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:stepSize="1.0"
+                    android:value="0.0"
+                    android:valueFrom="0.0"
+                    android:valueTo="10.0" />
+
+            </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

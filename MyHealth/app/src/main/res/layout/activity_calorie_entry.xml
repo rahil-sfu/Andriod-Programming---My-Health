@@ -1,0 +1,92 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calorie_entry_header"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:paddingTop="10dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/ic_baseline_fast_food_24"
+            android:minHeight="100dp"
+            android:minWidth="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal|center_vertical"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calorie_entry_food_item"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/foodItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/calorie_entry_food_item_hint"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calorie_entry_food_calorie"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/foodCalorie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/calorie_entry_food_calorie_hint"
+            android:inputType="numberDecimal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/calorieEntrySaveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:layout_marginEnd="20dp"
+                android:minWidth="125dp" />
+
+            <Button
+                android:id="@+id/calorieEntryCancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:layout_marginStart="20dp"
+                android:minWidth="125dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+

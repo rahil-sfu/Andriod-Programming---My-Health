@@ -1,0 +1,26 @@
+<resources>
+
+    <!--    GENERAL-->
+    <string name="app_name">MyHealth</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <!--    CALORIE ENTRY-->
+    <string name="calorie_entry_header">Calorie Entry</string>
+    <string name="calorie_entry_food_item">Food Item</string>
+    <string name="calorie_entry_food_item_hint">Enter the food item eaten</string>
+    <string name="calorie_entry_food_calorie">Food Calorie (cal)</string>
+    <string name="calorie_entry_food_calorie_hint">Enter the amount of calories consumed</string>
+
+    <!--    MANUAL ENTRY-->
+    <string name="manual_entry_header">Manual Entry</string>
+    <string name="manual_entry_activity">Activity</string>
+    <string name="manual_entry_activity_hint">Enter the activity performed</string>
+    <string name="manual_entry_duration">Duration (mins)</string>
+    <string name="manual_entry_duration_hint">Enter your duration of the activity</string>
+    <string name="manual_entry_calorie_lost">Calories Lost (cal)</string>
+    <string name="manual_entry_calorie_lost_hint">Enter the calories lost</string>
+    <string name="manual_entry_heart_rate">Heart Rate (bpm)</string>
+    <string name="manual_entry_heart_rate_hint">Enter the heart rate</string>
+
+</resources>

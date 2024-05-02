@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ExerciseFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calorie Checker"
+                android:textSize="24sp"
+                android:textAlignment="center"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minWidth="100dp"
+                android:minHeight="100dp"
+                android:layout_marginTop="40dp"
+                android:src = "@drawable/ic_baseline_directions_run_24" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Your Input Type"
+                android:textSize="18sp"
+                android:layout_marginTop="40dp"
+                android:textAlignment="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp">
+
+                <ImageView
+                    android:id="@+id/calorieEntryIcon"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:src = "@drawable/ic_baseline_fast_food_24"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:id="@+id/manualEntryIcon"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:src = "@drawable/ic_baseline_person_24"
+                    android:clickable="true"/>
+
+                <ImageView
+                    android:id="@+id/automaticEntryIcon"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="40dp"
+                    android:src = "@drawable/ic_baseline_laptop_mac_24"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text = "Calorie Entry"
+                    android:textSize="15sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text = "Manual Entry"
+                    android:textSize="15sp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text = "Automatic Entry"
+                    android:textSize="15sp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="“I don’t count my sit-ups. I only start counting when it starts hurting because they’re the only ones that count.” -Muhammad Ali"
+                android:textStyle="italic|bold"
+                android:textAlignment="center"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+</FrameLayout>

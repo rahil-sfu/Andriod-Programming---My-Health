@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Time Data"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:paddingTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text = "Calories Intake"
+                android:textSize="18dp"
+                android:textStyle=""/>
+
+            <TextView
+                android:id="@+id/homeCalorieIntake"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:text="123123"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text = "Calorie Lost"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/homeCalorieLost"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:text="123123"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text = "Calorie Gain"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/homeCalorieGain"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:text="0"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text = "Glasses of Water"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/homeGlassOfWater"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:text="4"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text = "Stress"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/homeStress"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:text="Low"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/homeUserProfile"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:src = "@drawable/ic_baseline_people_alt_24"
+                android:clickable="true"/>
+
+            <ImageView
+                android:id="@+id/homeInformation"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="80dp"
+                android:src = "@drawable/ic_baseline_info_24"
+                android:clickable="true"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

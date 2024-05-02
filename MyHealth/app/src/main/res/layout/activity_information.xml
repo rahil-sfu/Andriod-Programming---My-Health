@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.InformationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "Website"
+        android:onClick="onWebsiteClick"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onIdeaPitchClick"
+        android:layout_marginTop="20dp"
+        android:text = "Idea Pitch"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onShowAndTell1Click"
+        android:layout_marginTop="20dp"
+        android:text = "Show and Tell 1"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onShowAndTell2Click"
+        android:layout_marginTop="20dp"
+        android:text = "Show and Tell 2"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:onClick="onInformationBackClicked"
+        android:layout_marginTop="20dp"
+        android:minWidth="125dp"
+        android:text = "Back" />
+
+</LinearLayout>
